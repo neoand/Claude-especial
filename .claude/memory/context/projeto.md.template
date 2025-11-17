@@ -1,0 +1,165 @@
+# 📋 Contexto do Projeto
+
+> **Template:** Renomeie para `projeto.md` e preencha com informações do seu projeto
+
+---
+
+## 🎯 Visão Geral
+
+**Nome:** [Nome do Projeto]
+**Descrição:** [Descrição em 2-3 linhas]
+**Objetivo:** [Principal objetivo]
+
+**Status:** [Em Desenvolvimento / Testing / Produção]
+**Iniciado:** [Data]
+**Time:** [Nomes dos membros]
+
+---
+
+## 🏗️ Arquitetura
+
+### Stack Tecnológico
+
+**Backend:**
+- [Framework]: [Versão]
+- [Linguagem]: [Versão]
+- [Database]: [Tipo e versão]
+
+**Frontend:**
+- [Framework]: [Versão]
+- [Build Tool]: [Nome]
+- [UI Library]: [Nome]
+
+**Infraestrutura:**
+- [Cloud Provider / On-premise]
+- [CI/CD]: [Tool]
+- [Monitoring]: [Tool]
+
+### Estrutura de Diretórios
+
+```
+projeto/
+├── src/           - [Descrição]
+├── tests/         - [Descrição]
+├── docs/          - [Descrição]
+└── config/        - [Descrição]
+```
+
+---
+
+## 🌍 Ambientes
+
+### Development
+- **URL:** [URL ou localhost]
+- **Database:** [Nome/conexão]
+- **Acesso:** [Como acessar]
+
+### Testing/Staging
+- **URL:** [URL]
+- **Database:** [Nome]
+- **Acesso:** [SSH, VPN, etc]
+- **Deploy:** [Como fazer deploy]
+
+### Production
+- **URL:** [URL]
+- **Database:** [Nome]
+- **Acesso:** [SSH, VPN, etc]
+- **Deploy:** [Como fazer deploy]
+- **Monitoring:** [URL do dashboard]
+
+---
+
+## 🔌 Integrações
+
+### APIs Externas
+
+**[Nome da API 1]:**
+- **Propósito:** [Para que serve]
+- **Documentação:** [URL]
+- **Autenticação:** [Tipo]
+- **Rate Limits:** [Limites]
+
+**[Nome da API 2]:**
+- **Propósito:** [Para que serve]
+- **Documentação:** [URL]
+- **Autenticação:** [Tipo]
+
+### Serviços
+
+- **[Serviço 1]:** [Descrição e URL]
+- **[Serviço 2]:** [Descrição e URL]
+
+---
+
+## 👥 Stakeholders
+
+**Product Owner:** [Nome]
+**Tech Lead:** [Nome]
+**Desenvolvedores:** [Nomes]
+**DevOps:** [Nome]
+
+---
+
+## 📊 Métricas e KPIs
+
+### Performance
+- [Métrica 1]: [Target]
+- [Métrica 2]: [Target]
+
+### Qualidade
+- **Cobertura de Testes:** [%]
+- **Code Quality Score:** [Tool e score]
+- **Bugs Críticos:** [Máximo aceitável]
+
+### Negócio
+- [KPI 1]: [Target]
+- [KPI 2]: [Target]
+
+---
+
+## 🔐 Segurança
+
+### Credenciais
+- **Armazenamento:** [Onde ficam]
+- **Acesso:** [Quem tem]
+- **Rotação:** [Política de rotação]
+
+### Compliance
+- [Padrão 1]: [LGPD, GDPR, etc]
+- [Padrão 2]: [ISO, SOC2, etc]
+
+---
+
+## 📚 Documentação
+
+- **Wiki:** [URL]
+- **API Docs:** [URL]
+- **Runbooks:** [URL]
+- **Postman Collection:** [URL]
+
+---
+
+## 🚀 Roadmap
+
+### Q1 2025
+- [ ] [Feature 1]
+- [ ] [Feature 2]
+
+### Q2 2025
+- [ ] [Feature 3]
+- [ ] [Feature 4]
+
+---
+
+## 🐛 Issues Conhecidos
+
+### [Título do Issue 1]
+**Severidade:** [Alta / Média / Baixa]
+**Status:** [Investigando / Workaround / Resolvido]
+**Descrição:** [Breve descrição]
+**Workaround:** [Se houver]
+
+---
+
+**Última atualização:** [Data]
+**Próxima revisão:** [Quando revisar]

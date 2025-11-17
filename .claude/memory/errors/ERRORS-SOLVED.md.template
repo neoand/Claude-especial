@@ -1,0 +1,117 @@
+# 🐛 Erros Resolvidos - Registro Permanente
+
+> **Template:** Renomeie para `ERRORS-SOLVED.md` e documente todos os erros resolvidos
+
+> **IMPORTANTE**: Este arquivo documenta TODOS os erros encontrados e suas soluções.
+> Claude SEMPRE consulta este arquivo antes de executar comandos para evitar repetir erros.
+
+---
+
+## 📋 Índice de Erros
+
+| ID | Data | Erro | Status | Tags |
+|----|------|------|--------|------|
+| 001 | YYYY-MM-DD | [Nome do Erro](#erro-001) | ✅ Resolvido | #tag1 #tag2 |
+
+---
+
+## ERRO-001: [Título Descritivo do Erro]
+
+**Data:** YYYY-MM-DD
+**Severidade:** 🔴 Crítico / 🟡 Médio / 🟢 Baixo
+**Status:** ✅ Resolvido / 🔄 Workaround / ⏳ Investigando
+**Tags:** #categoria #tecnologia
+
+### Contexto
+[O que estava tentando fazer quando o erro ocorreu?]
+
+### Sintoma
+[Como o erro se manifestou? Mensagens de erro, comportamento inesperado]
+
+```
+[Cole aqui a mensagem de erro exata]
+```
+
+### Causa Raiz
+[Por que o erro aconteceu? Análise técnica]
+
+### Solução
+[Passo a passo da solução]
+
+```bash
+# Comandos executados para resolver
+comando1
+comando2
+```
+
+### Prevenção
+**Para NUNCA repetir este erro:**
+- [ ] [Ação preventiva 1]
+- [ ] [Ação preventiva 2]
+- [ ] [Documentação atualizada onde?]
+
+### Referências
+- [Link para documentação]
+- [Issue no GitHub]
+- [Stack Overflow]
+
+---
+
+## Template de Novo Erro
+
+Copie este template quando documentar novo erro:
+
+```markdown
+## ERRO-XXX: [Título Descritivo]
+
+**Data:** YYYY-MM-DD
+**Severidade:** 🔴 Crítico / 🟡 Médio / 🟢 Baixo
+**Status:** ✅ Resolvido / 🔄 Workaround / ⏳ Investigando
+**Tags:** #categoria #tecnologia
+
+### Contexto
+[O que estava tentando fazer?]
+
+### Sintoma
+[Como o erro se manifestou?]
+
+\`\`\`
+[Mensagem de erro]
+\`\`\`
+
+### Causa Raiz
+[Por que aconteceu?]
+
+### Solução
+[Passo a passo]
+
+\`\`\`bash
+# Comandos
+\`\`\`
+
+### Prevenção
+**Para NUNCA repetir:**
+- [ ] [Ação 1]
+- [ ] [Ação 2]
+
+### Referências
+- [Links]
+```
+
+---
+
+## 📊 Estatísticas
+
+**Total de Erros:** 0
+**Resolvidos:** 0
+**Com Workaround:** 0
+**Em Investigação:** 0
+
+**Categorias mais comuns:**
+1. [Categoria]: X erros
+2. [Categoria]: Y erros
+
+---
+
+**Última atualização:** [Data]
+**Próxima revisão:** [Mensal / Quando erro ocorrer]

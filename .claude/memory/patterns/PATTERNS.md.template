@@ -1,0 +1,78 @@
+# 🎨 Padrões de Projeto - Biblioteca de Soluções
+
+> **Template:** Renomeie para `PATTERNS.md` e documente padrões descobertos
+
+> **Propósito:** Registrar padrões de código, arquitetura e soluções reutilizáveis.
+
+---
+
+## 📋 Índice de Padrões
+
+| ID | Nome | Categoria | Uso |
+|----|------|-----------|-----|
+| P001 | [Nome do Padrão](#p001-nome) | [Categoria] | [Quando usar] |
+
+---
+
+## P001: [Nome do Padrão]
+
+**Categoria:** [Arquitetura / Código / DevOps / etc]
+**Quando Usar:** [Cenário]
+**Evitar Quando:** [Anti-padrões]
+
+### Problema
+[Que problema este padrão resolve?]
+
+### Solução
+[Descrição da solução]
+
+```javascript
+// Exemplo de código
+```
+
+### Benefícios
+- ✅ [Benefício 1]
+- ✅ [Benefício 2]
+
+### Trade-offs
+- ⚠️ [Trade-off 1]
+- ⚠️ [Trade-off 2]
+
+### Exemplos de Uso no Projeto
+- [Arquivo/Módulo 1]: [Como está usando]
+- [Arquivo/Módulo 2]: [Como está usando]
+
+---
+
+## Template de Novo Padrão
+
+```markdown
+## PXXX: [Nome do Padrão]
+
+**Categoria:** [Tipo]
+**Quando Usar:** [Cenário]
+**Evitar Quando:** [Situações]
+
+### Problema
+[O que resolve?]
+
+### Solução
+[Como resolver?]
+
+\`\`\`language
+// Código exemplo
+\`\`\`
+
+### Benefícios
+- ✅ [Benefício]
+
+### Trade-offs
+- ⚠️ [Trade-off]
+
+### Exemplos de Uso
+- [Onde usar]
+```
+
+---
+
+**Última atualização:** [Data]

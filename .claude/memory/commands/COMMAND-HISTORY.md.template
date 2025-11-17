@@ -1,0 +1,98 @@
+# 🔐 Histórico de Comandos Sudo/Críticos
+
+> **Template:** Renomeie para `COMMAND-HISTORY.md` e documente comandos importantes
+
+> **Propósito:** Registrar comandos sudo e críticos executados para referência futura.
+
+---
+
+## Por Que Documentar Comandos?
+
+1. **Auditoria**: Rastreabilidade de mudanças no sistema
+2. **Aprendizado**: Não esquecer comandos complexos
+3. **Segurança**: Entender impacto de cada comando
+4. **Reprodução**: Facilitar debug e replicação
+
+---
+
+## 📋 Comandos por Categoria
+
+### Sistema Operacional
+
+#### [Nome do Comando 1]
+**Data:** YYYY-MM-DD
+**Contexto:** [Por que foi necessário]
+**Comando:**
+```bash
+sudo comando aqui
+```
+**Resultado:** [O que aconteceu]
+**Impacto:** [Mudanças no sistema]
+
+---
+
+### Banco de Dados
+
+#### [Nome do Comando]
+**Data:** YYYY-MM-DD
+**Contexto:** [Por que]
+**Comando:**
+```bash
+comando
+```
+**Resultado:** [Resultado]
+
+---
+
+### Servidores/Deploy
+
+#### [Nome do Comando]
+**Data:** YYYY-MM-DD
+**Contexto:** [Por que]
+**Comando:**
+```bash
+comando
+```
+**Resultado:** [Resultado]
+
+---
+
+## Template de Novo Comando
+
+```markdown
+#### [Nome Descritivo]
+**Data:** YYYY-MM-DD
+**Contexto:** [Por que foi necessário executar]
+**Comando:**
+\`\`\`bash
+comando exato
+\`\`\`
+**Resultado:** [O que aconteceu]
+**Impacto:** [Mudanças causadas]
+**Reversão:** [Como reverter se necessário]
+```
+
+---
+
+## 🚨 Comandos Perigosos (Cuidado!)
+
+### [Comando Perigoso 1]
+**Risco:** 🔴 Alto / 🟡 Médio / 🟢 Baixo
+**O que faz:** [Descrição]
+**Quando usar:** [Cenário específico]
+**Precauções:**
+- [ ] [Checklist item 1]
+- [ ] [Checklist item 2]
+- [ ] Backup realizado?
+
+---
+
+## 📊 Estatísticas
+
+**Total de comandos documentados:** 0
+**Comandos sudo:** 0
+**Comandos com reversão:** 0
+
+---
+
+**Última atualização:** [Data]

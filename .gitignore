@@ -1,0 +1,207 @@
+# ========================================
+# Universal .gitignore for Claude-especial Projects
+# Created: 2025-11-17
+# ========================================
+
+# ==================== Python ====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+ENV/
+env/
+
+# ==================== Node.js ====================
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+.npm
+.yarn
+
+# ==================== Java ====================
+*.class
+*.jar
+*.war
+*.ear
+target/
+.gradle/
+
+# ==================== Go ====================
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+vendor/
+
+# ==================== Rust ====================
+target/
+Cargo.lock
+
+# ==================== Logs ====================
+*.log
+logs/
+*.log.*
+
+# ==================== Databases ====================
+*.sql
+*.dump
+*.db
+*.sqlite
+*.sqlite3
+
+# ==================== Configuração Sensível ====================
+# NUNCA commitar credenciais!
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+config.json
+.aws/
+.gcloud/
+
+# ==================== IDE ====================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# Sublime
+*.sublime-*
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ==================== OS ====================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ==================== Temporários ====================
+tmp/
+temp/
+*.tmp
+*.bak
+*.cache
+*.swp
+
+# ==================== Build Artifacts ====================
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+
+# ==================== Testing ====================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+coverage/
+.nyc_output/
+
+# ==================== Docker ====================
+*.dockerignore
+docker-compose.override.yml
+
+# ==================== Terraform ====================
+.terraform/
+*.tfstate
+*.tfstate.backup
+.terraformrc
+terraform.rc
+
+# ==================== Archives ====================
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ==================== Large Files ====================
+*.mp4
+*.avi
+*.mov
+*.pdf
+*.xlsx
+*.docx
+
+# ==================== Claude Code (Manter!) ====================
+# IMPORTANTE: NÃO ignorar .claude/ - queremos versionar!
+# .claude/
+
+# Mas ignorar alguns arquivos temporários se houver
+.claude/.cache/
+.claude/tmp/
+
+# ==================== Git ====================
+*.orig
+*.rej
+
+# ==================== Certificados ====================
+*.crt
+*.cer
+*.pem
+*.key
+
+# ==================== EXCEÇÕES (Arquivos para INCLUIR) ====================
+# Forçar inclusão de arquivos importantes mesmo que matched acima
+!.gitignore
+!.gitattributes
+!.clauderc
+!.mcp.json
+!README.md
+!CLAUDE.md
+!LICENSE
+
+# ==================== Projeto Específico ====================
+# Adicione aqui padrões específicos do seu projeto
+
+# ==================== FIM ====================
