@@ -26,6 +26,7 @@
 |---|------|--------|--------|------|
 | 001 | 2025-11-17 | [Sistema de Memória Claude](#adr-001) | ✅ Aceito | #infra #claude |
 | 002 | 2025-11-17 | [Arquitetura LLM-First Tools](#adr-002) | ✅ Aceito | #infra #claude #automation |
+| 003 | 2025-11-17 | [Evolução Contínua do Template](#adr-003) | ✅ Aceito | #template #workflow |
 
 ---
 
@@ -353,10 +354,110 @@ Em que condições revisitar esta decisão?
 
 ---
 
+## ADR-003: Evolução Contínua do Template
+
+**Data:** 2025-11-17
+**Status:** ✅ Aceito e CRÍTICO
+**Decisores:** Anderson + Claude
+
+### Contexto
+
+Este é um template destinado a ser reutilizado em múltiplos projetos futuros.
+
+**Problema:** Como garantir que o template evolua com as descobertas dos projetos que o utilizam?
+
+**Risco:** Template ficar desatualizado, perdendo valor ao longo do tempo.
+
+### Decisão
+
+**Projetos que usam este template devem sincronizar melhorias genéricas de volta para o template.**
+
+**Workflow de Sincronização:**
+
+Quando um projeto descobrir/criar algo genérico e reutilizável:
+1. Aplicar no projeto específico
+2. Identificar se é genérico o suficiente
+3. Se SIM: Copiar de volta para este template
+4. Commitar e push
+5. Documentar em sync-log.md
+
+**Critérios para Sincronizar:**
+
+**✅ SINCRONIZAR:**
+- Skills genéricos (úteis para qualquer projeto)
+- Scripts bash/python reutilizáveis
+- Melhorias em protocolos (AUTO-LEARNING, THINKING-MODE)
+- ADRs de arquitetura geral
+- Patterns de código universal
+- Melhorias em LLM_FIRST_TOOLS.md
+- Novos MCPs úteis
+- Descobertas sobre Git workflow
+
+**❌ NÃO SINCRONIZAR:**
+- Código específico de domínio/negócio
+- Scripts de servidores específicos
+- ADRs de decisões de negócio
+- Contexto de projeto específico
+- Erros específicos de tecnologia/framework
+
+### Consequências
+
+**Positivas:**
+- ✅ Template evolui continuamente
+- ✅ Conhecimento acumulativo entre projetos
+- ✅ Novos projetos herdam todas as melhorias
+- ✅ Economia de tempo exponencial
+- ✅ Cada projeto melhora o template (efeito composto)
+
+**Negativas:**
+- ⚠️ Requer disciplina para sincronizar
+- ⚠️ Risco de sincronizar código específico por engano
+
+### Implementação
+
+**Checklist para Claude ao criar algo:**
+
+```
+[ ] É genérico ou específico do projeto?
+[ ] Útil para qualquer projeto ou só este?
+[ ] Se GENÉRICO:
+    [ ] Copiar para template Claude-especial
+    [ ] Remover partes específicas
+    [ ] Testar se faz sentido genérico
+    [ ] Commitar no template
+    [ ] Documentar em sync-log.md
+[ ] Se ESPECÍFICO:
+    [ ] Apenas commitar no projeto
+```
+
+**Tracking:** Ver `.claude/memory/learnings/sync-log.md`
+
+### Exemplos
+
+**✅ Deve Sincronizar:**
+- Novo skill para backup automático
+- Melhoria no AUTO-LEARNING-PROTOCOL
+- Script bash genérico para health checks
+- Pattern de retry em APIs
+- ADR sobre estratégia de testes
+
+**❌ Não Deve Sincronizar:**
+- Módulo específico de e-commerce
+- Script de deploy para servidor X
+- Integração com API específica de negócio
+- ADR sobre escolha de fornecedor
+
+### Referência
+
+- **sync-log.md:** Histórico de sincronizações
+- **GitHub:** Template sempre atualizado
+
+---
+
 ## 📊 Estatísticas
 
-**Total de ADRs:** 2
-**Aceitos:** 2
+**Total de ADRs:** 3
+**Aceitos:** 3
 **Propostos:** 0
 **Rejeitados:** 0
 **Obsoletos:** 0
