@@ -22,6 +22,32 @@ Sempre que sincronizar algo com o template, documentar aqui:
 
 ## 📊 Log de Sincronizações
 
+### 2025-11-17: ADR-008 Advanced Context → ADR-005 Template
+
+- **Tipo:** ADR (REVOLUCIONÁRIO!)
+- **Adicionado:** Sistema avançado de gestão de contexto e auto-educação
+- **Repos:** testing-odoo-15-sr + Claude-especial
+- **Commit projeto:** f24a8aa (ADR-008)
+- **Commit template:** 95d7ffd (ADR-005)
+- **Razão:** 5 recursos revolucionários descobertos - transforma contexto management
+- **Impacto:**
+  - PreCompact hooks para salvar contexto
+  - SessionStart hooks para auto-restauração
+  - UserPromptSubmit hooks para contexto dinâmico
+  - Output Styles para múltiplas personalidades
+  - @imports para CLAUDE.md modular
+- **Descobertas extras:** Checkpointing, Plugin system, Plan Mode, Headless+JSON, Custom MCPs
+
+### 2025-11-17: ADR-007 Performance → ADR-004 Template
+
+- **Tipo:** ADR
+- **Adicionado:** Estratégia de paralelização máxima
+- **Repos:** testing-odoo-15-sr + Claude-especial
+- **Commit projeto:** 656d19e (ADR-007)
+- **Commit template:** e45b0ae (ADR-004)
+- **Razão:** Otimizações críticas para Claude Max 20x - 5-10x mais rápido
+- **Impacto:** Tool calls paralelos, bash paralelo, headless, worktrees
+
 ### 2025-11-17: ADR-006 Sincronização Dual → ADR-003 Template
 
 - **Tipo:** ADR
@@ -52,14 +78,14 @@ Sempre que sincronizar algo com o template, documentar aqui:
 
 ## 📈 Estatísticas
 
-**Total de sincronizações:** 3
+**Total de sincronizações:** 5
 **Skills sincronizados:** 1 (tool-inventory)
 **Scripts sincronizados:** 0
 **Protocolos sincronizados:** 2 (AUTO-LEARNING, THINKING-MODE)
-**ADRs sincronizados:** 3 (ADR-001→001, ADR-002→002, ADR-006→003)
+**ADRs sincronizados:** 5 (ADR-001→001, ADR-002→002, ADR-006→003, ADR-007→004, ADR-008→005)
 **Learnings sincronizados:** 2 (git-workflow, sync-log)
 
-**Última sincronização:** 2025-11-17
+**Última sincronização:** 2025-11-17 (ADR-008 REVOLUCIONÁRIO!)
 
 ---
 
