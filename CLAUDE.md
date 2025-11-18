@@ -26,245 +26,131 @@
 
 ## 📋 Importações de Contexto
 
+### Contextos Detalhados
 @.claude/memory/context/projeto.md
+
+### Decisões e Conhecimento
 @.claude/memory/decisions/ADR-INDEX.md
 @.claude/memory/errors/ERRORS-SOLVED.md
 @.claude/memory/patterns/PATTERNS.md
 @.claude/memory/commands/COMMAND-HISTORY.md
+
+### Aprendizados e Workflows
 @.claude/memory/learnings/git-workflow.md
+
+### Protocolos Críticos
 @.claude/memory/AUTO-LEARNING-PROTOCOL.md
 @.claude/memory/THINKING-MODE-PROTOCOL.md
+@.claude/memory/protocols/PERFORMANCE-PARALLELIZATION.md
+@.claude/memory/protocols/SYNC-DUAL-PROTOCOL.md
+@.claude/memory/protocols/LLM-TOOLS-OVERVIEW.md
 
 ---
 
-## 🧠 PROTOCOLO DE AUTO-APRENDIZADO (CRÍTICO!)
-
-### Regras Fundamentais
-
-**❌ NUNCA:**
-- Assumir ou deduzir sem verificar
-- Repetir comando que falhou sem modificação
-- Executar sem checar histórico primeiro
-- Esquecer de documentar erro resolvido
-- Criar script novo sem verificar inventário (`.claude/scripts/`)
-
-**✅ SEMPRE:**
-1. **ANTES de executar comando:** Verificar `COMMAND-HISTORY.md`
-2. **Se comando falhar:** Documentar IMEDIATAMENTE em `ERRORS-SOLVED.md`
-3. **Se usar sudo:** Salvar regra em `COMMAND-HISTORY.md`
-4. **Se pesquisar:** Salvar resultado em `learnings/`
-5. **Se incerto:** Pesquisar docs oficiais, NUNCA assumir
-6. **QUANDO APRENDER ALGO:** Ativar thinking mode, raciocinar profundamente, salvar "na rocha"
-7. **ANTES de criar script:** Verificar `.claude/scripts/` via skill `tool-inventory`, reutilizar se existir
-
-### Checklist de Execução
-
-Antes de QUALQUER ação:
-
-```
-[ ] Li ERRORS-SOLVED.md?
-[ ] Li COMMAND-HISTORY.md?
-[ ] Verifiquei se script/tool existe?
-[ ] Comando é seguro?
-[ ] Tenho certeza ou preciso pesquisar?
-```
-
-Depois de resolver problema:
-
-```
-[ ] Erro documentado em ERRORS-SOLVED.md?
-[ ] Comando sudo salvo em COMMAND-HISTORY.md?
-[ ] Pattern salvo em PATTERNS.md?
-[ ] Decisão arquitetural → ADR criado?
-```
-
----
-
-## 🤖 LLM-First Tools System
-
-### Sistema Híbrido (Skills + MCPs)
-
-**Skills Ativos:**
-- `tool-inventory` - Verifica scripts antes de criar novos (AUTO-INVOCADO)
-
-**MCPs Instalados:**
-- `github` - GitHub API (repos, PRs, issues)
-- `git` - Git operations (status, diff, commit)
-- `filesystem` - Advanced file operations
-
-**Scripts Centralizados:**
-- Localização: `.claude/scripts/{bash,python,npm}/`
-- Nomenclatura: `verbo-substantivo.extensão`
-- Header obrigatório: Sim
-- Documentação completa: `.claude/LLM_FIRST_TOOLS.md`
-
-**Regra de Ouro:**
-> **SEMPRE** verificar inventário via skill `tool-inventory` ANTES de criar novo script!
-
----
-
-## 📚 Contexto Específico do Projeto
-
-### Stack Tecnológico
-
-**Backend:**
-- [Framework e versão]
-- [Bibliotecas principais]
-
-**Frontend:**
-- [Framework e versão]
-- [Bibliotecas principais]
-
-**Infraestrutura:**
-- [Servidor / Cloud provider]
-- [CI/CD]
-- [Monitoring]
-
-### Ambientes
-
-**Development:**
-- [URL/IP]
-- [Acesso]
-
-**Testing/Staging:**
-- [URL/IP]
-- [Acesso]
-
-**Production:**
-- [URL/IP]
-- [Acesso]
-
-### Serviços Externos
-
-- [API 1] - [Propósito]
-- [API 2] - [Propósito]
-
----
-
-## 🚨 Problemas Conhecidos e Soluções
-
-### [Nome do Problema 1]
-
-**Sintoma:**
-[Descrever]
-
-**Solução:**
-[Comando ou passo a passo]
-
-**Referência:** `.claude/memory/errors/ERRORS-SOLVED.md#erro-xxx`
-
----
-
-## 🎯 Padrões e Convenções
+## 🎨 Padrões e Convenções
 
 ### Código
+- **Indentação:** [2 ou 4 espaços]
+- **Lint:** [ESLint / Pylint / etc]
+- **Style Guide:** [Airbnb / Google / PEP 8 / etc]
+- **Naming:** [camelCase / snake_case / PascalCase]
 
-- **Estilo:** [PEP8 / Airbnb / Google / etc]
-- **Linting:** [ESLint / Pylint / etc]
-- **Formatação:** [Prettier / Black / etc]
+### Commits
+- **Mensagens:** `tipo: descrição` (feat/fix/refactor/docs)
+- **Idioma:** [Português / Inglês]
+- **Co-authored:** Incluir Claude
 
-### Git
-
-- **Commits:** [Conventional Commits](https://www.conventionalcommits.org/)
-- **Branches:** `feature/`, `fix/`, `refactor/`
-- **Workflow:** Merge (NUNCA rebase)
-
-### Documentação
-
-- **Inline:** JSDoc / Docstrings
-- **API:** OpenAPI / Swagger
-- **Arquitetura:** ADRs em `.claude/memory/decisions/`
+### Segurança
+- **SEMPRE** validar inputs
+- **NUNCA** commitar credenciais
+- **TESTAR** com diferentes perfis
 
 ---
 
-## 🔐 Segurança e Credenciais
+## 🚨 Conhecimento Crítico
 
-### NUNCA commitar:
+### Problemas Conhecidos
+1. [Problema 1] - [Status]
+2. [Problema 2] - [Status]
 
-- ❌ `.env`, `.env.*`
-- ❌ `credentials.json`, `secrets.json`
-- ❌ `*.pem`, `*.key`, `*.p12`
-- ❌ API keys, tokens, senhas
+### Decisões Arquiteturais
+- [Decisão 1] (ver ADR-XXX)
+- [Decisão 2] (ver ADR-XXX)
 
-### Verificar `.gitignore` sempre!
-
-**Localização:** Raiz do projeto
-**Template:** Já incluso no Claude-especial
-
----
-
-## 📊 Métricas e Monitoramento
-
-### Performance
-
-- [Métrica 1]: [Objetivo]
-- [Métrica 2]: [Objetivo]
-
-### Qualidade
-
-- **Cobertura de testes:** [Objetivo %]
-- **Code quality:** [Tool e score]
-- **Vulnerabilidades:** [Tool e score]
+### Integrações Importantes
+- [API 1] - [Detalhes]
+- [Serviço 2] - [Detalhes]
 
 ---
 
-## 🔗 Links Importantes
+## 🎯 Prioridades Atuais
 
-- **Repositório:** [GitHub URL]
-- **Documentação:** [URL]
-- **CI/CD:** [URL]
-- **Monitoring:** [URL]
-- **Wiki:** [URL]
-
----
-
-## 📝 Notas de Sessão
-
-### Última sessão: [Data]
-
-**Trabalhado:**
-- [Item 1]
-- [Item 2]
-
-**Próximos passos:**
-- [ ] [Task 1]
-- [ ] [Task 2]
-
-**Bloqueios:**
-- [Se houver]
+1. **Alta:** [Task 1]
+2. **Alta:** [Task 2]
+3. **Média:** [Task 3]
+4. **Baixa:** [Task 4]
 
 ---
 
-## 🎓 Aprendizados Recentes
-
-Ver: `.claude/memory/learnings/`
-
-**Últimos 5:**
-1. [Aprendizado 1] - [Data]
-2. [Aprendizado 2] - [Data]
-3. [Aprendizado 3] - [Data]
-4. [Aprendizado 4] - [Data]
-5. [Aprendizado 5] - [Data]
-
----
-
-## ⚡ Quick Commands
+## 💡 Comandos Frequentes
 
 ```bash
-# [Comando útil 1]
-[comando]
+# [Descrição do comando]
+comando aqui
 
-# [Comando útil 2]
-[comando]
-
-# Ver scripts disponíveis
-ls -la .claude/scripts/bash/
-
-# Ver MCPs instalados
-claude mcp list
+# [Outro comando]
+outro comando
 ```
 
 ---
 
-**Última atualização:** [Data]
-**Próxima revisão:** [Quando revisar]
+## 📚 Referências Rápidas
+
+**Documentação:**
+- [Framework]: [URL]
+- [Linguagem]: [URL]
+
+**Estrutura do Projeto:**
+- [Diretório 1]: [Descrição]
+- [Diretório 2]: [Descrição]
+
+---
+
+## 🔄 Última Atualização
+
+**Data:** [YYYY-MM-DD]
+**Por:** Claude + [Seu Nome]
+**Versão:** 3.0 (Modular com @imports)
+**Próxima revisão:** Automática a cada sessão
+
+---
+
+## 📝 Notas
+
+- Este arquivo deve ser mantido ENXUTO (< 200 linhas) ✅
+- Detalhes profundos vão em arquivos específicos em `.claude/memory/`
+- Protocolos grandes agora são @imports em `.claude/memory/protocols/`
+- Use `#` no chat para adicionar memórias rapidamente
+- Revise mensalmente para remover informações obsoletas
+
+---
+
+## 🚀 Setup Rápido
+
+### Primeira Vez no Projeto?
+
+1. **Copiar `.claude.env.example` para `.claude.env`**
+   ```bash
+   cp .claude.env.example .claude.env
+   ```
+
+2. **Preencher informações do projeto**
+   - Editar este arquivo (CLAUDE.md)
+   - Preencher `.claude/memory/context/projeto.md`
+
+3. **Iniciar desenvolvimento**
+   - Claude já tem todo o contexto!
+
+---
+
+**FIM DO CLAUDE.md**
