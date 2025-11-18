@@ -28,6 +28,7 @@
 | 002 | 2025-11-17 | [Arquitetura LLM-First Tools](#adr-002) | ✅ Aceito | #infra #claude #automation |
 | 003 | 2025-11-17 | [Evolução Contínua do Template](#adr-003) | ✅ Aceito | #template #workflow |
 | 004 | 2025-11-17 | [Otimizações Performance e Paralelização](ADR-007-PERFORMANCE.md) | ✅ Aceito | #performance #speed #parallel |
+| 005 | 2025-11-17 | [Sistema Avançado de Gestão de Contexto e Auto-Educação](ADR-008-ADVANCED-CONTEXT.md) | ✅ Aceito | #infra #claude #hooks #revolucionário |
 
 ---
 
@@ -457,8 +458,8 @@ Quando um projeto descobrir/criar algo genérico e reutilizável:
 
 ## 📊 Estatísticas
 
-**Total de ADRs:** 4
-**Aceitos:** 4
+**Total de ADRs:** 5
+**Aceitos:** 5
 **Propostos:** 0
 **Rejeitados:** 0
 **Obsoletos:** 0
